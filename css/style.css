@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Bebas Neue', cursive;
+
+}
+
+.text-container{
+  position: sticky;
+  top: 0;
+  background:rgb(233, 228, 228);
+  margin-top: -10px;
+}
+
+
+.main-text{
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 0.4rem;
+  letter-spacing: 7px;
+
+}
+
+.main-text span{
+  color: rgb(206, 21, 21);
+}
+
+/* .loader{
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translate(-280%,110%);
+  -webkit-transform: translate(-280%,110%);
+  -moz-transform: translate(-280%,110%);
+  -ms-transform: translate(-280%,110%);
+  -o-transform: translate(-280%,110%);
+} */
+
+/* .loader{
+  margin:7% 40%;
+} */
+
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.loader img{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+
+/* .image-container{
+  margin: 1rem;
+  position: relative;
+  z-index: -1;
+}
+
+.image-container img{
+  max-width: 33%;
+  max-height: auto;
+  padding:10px;
+} */
+
+.image-container{
+  margin: 0.5rem 1rem;
+}
+
+.image-box{
+  width: 33%;
+  height: 250px;
+  display: inline-flex;
+}
+
+.image-box img{
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Media Queries for Mobile and Tablet */
+
+@media screen and (max-width:600px){
+  .main-text{
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .image-container{
+    margin: 1rem;
+  }
+}
